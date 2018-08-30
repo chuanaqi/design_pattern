@@ -52,12 +52,13 @@ public class MyProxy {
 
     private static String generateSrc(Class<?> interfaces){
         StringBuffer src = new StringBuffer();
-        src.append("package com.lai.design.pattern.myproxy;" + ln);
+        String packagePath = MyProxy.class.getPackage().getName();
+        src.append("package "+packagePath+";" + ln);
         src.append("import java.lang.reflect.Method;" + ln);
         src.append("public class $Proxy0 implements " + interfaces.getName() + "{" + ln);
         src.append("MyInvocationHandler h;" + ln);
 
-        src.append("public $Proxy0 (MyInvocationHandler h) {" + ln);
+        src.append("public $Proxy0(MyInvocationHandler h) {" + ln);
         src.append("this.h = h;" + ln);
         src.append("}" + ln);
 

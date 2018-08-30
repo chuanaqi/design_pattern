@@ -14,7 +14,8 @@
     1.MyClassLoader 实现代码生成、编译、动态加载到JVM
     2.MyProxy 生成代理对象
 ### 测试
-    运行jdk/Test.java测试
+    运行jdk/THouseJDKProxy.java测试 JDK
+    运行myproxy/HouseProxy.java测试自实现动态代理
 
 
 
