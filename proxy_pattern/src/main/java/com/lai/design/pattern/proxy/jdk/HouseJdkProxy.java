@@ -8,9 +8,10 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * Created by laiweigeng on 2018/8/30.
+ * @author laiweigeng
+ * @Date: 2018/8/30 19:50
  */
-public class HouseJDKProxy implements InvocationHandler {
+public class HouseJdkProxy implements InvocationHandler {
     private Person target;
 
 
@@ -31,7 +32,7 @@ public class HouseJDKProxy implements InvocationHandler {
         return null;
     }
     public static void main(String[] args) throws Exception{
-        Object object = new HouseJDKProxy().getInstance(new Buyer());
+        Object object = new HouseJdkProxy().getInstance(new Buyer());
         Person person = (Person) object;
         person.information();
     }

@@ -6,7 +6,8 @@ import com.lai.design.pattern.entity.Person;
 import java.lang.reflect.Method;
 
 /**
- * Created by laiweigeng on 2018/8/30.
+ * @author laiweigeng
+ * @Date: 2018/8/30 19:50
  */
 public class HouseProxy implements MyInvocationHandler {
     private Person target;

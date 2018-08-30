@@ -4,9 +4,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.Closeable;
 import java.io.File;
 import java.io.FileInputStream;
-
 /**
- * Created by laiweigeng on 2018/8/30.
+ * @author laiweigeng
+ * @Date: 2018/8/30 19:50
  * 实现代码生成、编译、动态加载到JVM
  */
 public class MyClassLoader extends ClassLoader {
@@ -38,7 +38,10 @@ public class MyClassLoader extends ClassLoader {
                 }finally {
                     colseStream(in);
                     colseStream(out);
-                    classFile.delete();
+                    if(classFile != null){
+                        classFile.delete();
+
+                    }
                 }
 
             }

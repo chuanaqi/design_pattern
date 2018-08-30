@@ -1,8 +1,12 @@
 package com.lai.design.pattern.entity;
 
 /**
- * Created by laiweigeng on 2018/8/30.
+ * @author laiweigeng
+ * @Date: 2018/8/30 19:50
  */
 public interface Person {
+    /**
+     * 发布房屋买卖信息
+     */
     void information();
 }

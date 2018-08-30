@@ -1,7 +1,8 @@
 package com.lai.design.pattern.entity;
 
 /**
- * Created by laiweigeng on 2018/8/30.
+ * @author laiweigeng
+ * @Date: 2018/8/30 19:50
  */
 public class Buyer implements Person {
     @Override
