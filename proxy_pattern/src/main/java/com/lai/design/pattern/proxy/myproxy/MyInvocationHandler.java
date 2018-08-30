@@ -1,4 +1,4 @@
-package com.lai.design.pattern.myproxy;
+package com.lai.design.pattern.proxy.myproxy;
 
 import java.lang.reflect.Method;
 

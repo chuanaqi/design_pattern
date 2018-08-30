@@ -1,7 +1,7 @@
 import com.lai.design.pattern.entity.Person;
-import com.lai.design.pattern.myproxy.MyClassLoader;
-import com.lai.design.pattern.myproxy.MyInvocationHandler;
-import com.lai.design.pattern.myproxy.MyProxy;
+import com.lai.design.pattern.proxy.myproxy.MyClassLoader;
+import com.lai.design.pattern.proxy.myproxy.MyInvocationHandler;
+import com.lai.design.pattern.proxy.myproxy.MyProxy;
 
 import java.lang.reflect.Method;
 

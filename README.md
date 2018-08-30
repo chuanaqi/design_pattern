@@ -6,7 +6,11 @@
     3.把被代理对象的引用也拿到了
     4.重新动态生成一个class字节码
     5.然后编译
-### Jdk动态代理实现
+### 包说明
+    1.cglib    cglib实现动态代理
+    2.jdk      JDK实现动态代理
+    3.myproxy  自实现动态代理
+### myproxy 动态代理实现
     1.MyClassLoader 实现代码生成、编译、动态加载到JVM
     2.MyProxy 生成代理对象
 ### 测试

@@ -1,4 +1,4 @@
-package com.lai.design.pattern.myproxy;
+package com.lai.design.pattern.proxy.myproxy;
 
 import javax.tools.JavaCompiler;
 import javax.tools.StandardJavaFileManager;
@@ -57,7 +57,7 @@ public class MyProxy {
         src.append("public class $Proxy0 implements " + interfaces.getName() + "{" + ln);
         src.append("MyInvocationHandler h;" + ln);
 
-        src.append("public $Proxy0(MyInvocationHandler h) {" + ln);
+        src.append("public $Proxy0 (MyInvocationHandler h) {" + ln);
         src.append("this.h = h;" + ln);
         src.append("}" + ln);
 
