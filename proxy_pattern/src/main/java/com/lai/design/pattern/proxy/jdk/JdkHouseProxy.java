@@ -11,7 +11,7 @@ import java.lang.reflect.Proxy;
  * @author laiweigeng
  * @Date: 2018/8/30 19:50
  */
-public class HouseJdkProxy implements InvocationHandler {
+public class JdkHouseProxy implements InvocationHandler {
     private Person target;
 
 
@@ -32,7 +32,7 @@ public class HouseJdkProxy implements InvocationHandler {
         return null;
     }
     public static void main(String[] args) throws Exception{
-        Object object = new HouseJdkProxy().getInstance(new Buyer());
+        Object object = new JdkHouseProxy().getInstance(new Buyer());
         Person person = (Person) object;
         person.information();
     }

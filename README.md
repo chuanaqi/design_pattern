@@ -16,6 +16,7 @@
 ### 测试
     运行jdk/THouseJDKProxy.java测试 JDK
     运行myproxy/HouseProxy.java测试自实现动态代理
+    运行cglib/CglibHouseProxy.java测试cglib动态代理
 
 
 
