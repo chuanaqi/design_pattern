@@ -8,13 +8,13 @@ import java.io.ObjectStreamException;
  * 懒汉模式：线程安全，同步方法效率低（不推荐）
  */
 public class Singleton {
-    private static Singleton singleton;
+    private static Singleton INSTANCE;
 
     private Singleton() {
         /**
          * 防止反射获取多个实例
          */
-        if (null != singleton) {
+        if (null != INSTANCE) {
             throw new RuntimeException("Singleton实例已存在");
         }
     }
@@ -24,10 +24,10 @@ public class Singleton {
      * @return
      */
     public static synchronized Singleton getInstance() {
-        if (singleton == null) {
-            singleton = new Singleton();
+        if (INSTANCE == null) {
+            INSTANCE = new Singleton();
         }
-        return singleton;
+        return INSTANCE;
     }
 
     /**

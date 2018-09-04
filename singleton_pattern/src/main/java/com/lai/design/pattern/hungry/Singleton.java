@@ -8,19 +8,19 @@ import java.io.ObjectStreamException;
  * 饿汉模式：写法简单，线程安全，类装载时实例化，会造成内存浪费（不推荐）
  */
 public class Singleton {
-    private final static Singleton singleton = new Singleton();
+    private final static Singleton INSTANCE = new Singleton();
 
     private Singleton() {
         /**
          * 防止反射获取多个实例
          */
-        if (null != singleton) {
+        if (null != INSTANCE) {
             throw new RuntimeException("Singleton实例已存在");
         }
     }
 
     public static Singleton getInstance(){
-        return singleton;
+        return INSTANCE;
     }
 
     /**
@@ -29,6 +29,6 @@ public class Singleton {
      * @throws ObjectStreamException
      */
     private Object readResolve() throws ObjectStreamException {
-        return singleton;
+        return INSTANCE;
     }
 }
