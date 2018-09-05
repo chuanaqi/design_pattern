@@ -56,3 +56,19 @@
     运行simple/Test.java  测试 简单工厂
     运行func/Test.java    测试 工厂方法模式
     运行abstr/Test.java   测试 抽象工厂
+
+
+## delegate_pattern模块（委派模式实现）
+### 描述
+    1.静态代理和策略模式一种特殊的组合。
+    2.客户请求（Boss）、委派者（Leader）、被委派者（Programmer）。
+    3.委派者要持有被委派者的引用。
+    4.代理模式注重的是过程， 委派模式注重的是结果。
+    5.策略模式注重是可扩展（外部扩展），委派模式注重内部的灵活和复用。
+    6.委派的核心：就是分发、调度、派遣。
+### 实现
+    Leader                              委托者
+    BackendProgrammer,FrontProgrammer  被委托者
+    Boss                               客户端
+### 测试
+    运行Boss.java 测试
