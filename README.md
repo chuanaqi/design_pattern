@@ -57,6 +57,23 @@
     运行func/Test.java    测试 工厂方法模式
     运行abstr/Test.java   测试 抽象工厂
 
+## strategy_pattern模块（策略模式实现）
+### 描述
+    策略模式定义和封装了一系列的算法。
+    它们是可以相互替换的，也就是说它们具有共性，而它们的共性就体现在策略接口的行为上，
+    让算法独立于使用它的客户而独立变化，需要让客户端依赖于策略接口。
+###使用场景
+    1.针对同一类型问题的多种处理方式，仅仅是具体行为有差别时； 
+    2.需要安全地封装多种同一类型的操作时； 
+    3.出现同一抽象类有多个子类，而又需要使用 if-else 或者 switch-case 来选择具体子类时。
+### 实现
+    IPriceStrategy          价格计算策略接口
+    NonVipPriceStrategy     普通客户计算策略（实现IPriceStrategy接口）
+    VipPriceStrategy        VIP客户计算策略（实现IPriceStrategy接口）
+    SupperVipPriceStrategy  策略上下文（持有IPriceStrategy引用）
+    Client                  客户端
+### 测试
+    运行Client.java 测试
 
 ## delegate_pattern模块（委派模式实现）
 ### 描述
@@ -74,3 +91,4 @@
     Boss                               客户端
 ### 测试
     运行Boss.java 测试
+
