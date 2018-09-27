@@ -92,3 +92,20 @@
 ### 测试
     运行Boss.java 测试
 
+## decorator_pattern模块（装饰器模式实现）
+### 描述
+    装饰器模式是一种用于代替继承的技术，无需通过继承增加子类就能扩展对象的新功能。使用对象的关联关系代替继承关系，更加灵活，同时避免类型体系的快速膨胀。
+    装饰器的价值在于装饰，他并不影响被装饰类本身的核心功能。
+    
+###使用场景
+    1.IO中输入流和输出流的设计
+    2.Swing包中图形界面构件功能
+    3.Servlet API中提供了一个request对象的Decorator设计模式的默认实现类HttpServletRequestWrapper，HttpServletRequestWrapper类增强了request对象的功能。
+    4.Struts2中，request，response，session对象的处理
+### 实现
+    IPayment                                抽象支付接口
+    Baofoopay,Yeepay                        具体渠道支付实现类
+    PaymentDecorator                        装饰类
+    PaymentDecoratorMessageParseDecorator   报文解析装饰器
+### 测试
+    运行test.java 测试
