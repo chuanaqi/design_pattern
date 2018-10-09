@@ -15,6 +15,7 @@
         <module>delegate_pattern</module>
         <module>strategy_pattern</module>
         <module>decorator_pattern</module>
+        <module>template_pattern</module>
     </modules>
     <build>
         <plugins>
